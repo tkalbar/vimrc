@@ -165,6 +165,17 @@ func! SyntasticCheckCoffeescript()
 endfunc
 nnoremap <silent> <leader>c :call SyntasticCheckCoffeescript()<cr>
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => ALE (syntax checker)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Python
+let g:ale_linters = {
+    \   'python': ['flake8'],
+    \}
+
+let g:ale_set_quickfix = 1
+let g:ale_sign_error = '>>'
+let g:ale_sign_warning = '--'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Git gutter (Git diff)
