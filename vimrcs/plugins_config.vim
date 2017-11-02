@@ -146,6 +146,9 @@ let g:go_fmt_command = "goimports"
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Syntastic (syntax checker)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Java
+let g:syntastic_java_javac_config_file_enabled = 1
+
 " Python
 let g:syntastic_python_checkers=['pyflakes']
 
